@@ -5,6 +5,15 @@
 }
 
 body{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+a{
+    color: #FFF;
+}
+
+h1,h2,h3,h4{
     font-family: 'Bellefair', serif;
 }
 
@@ -36,6 +45,22 @@ h5{
 header{
     width: 100%;
     padding: 32px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-transform: uppercase;
+}
+
+header::after{
+    content: '';
+    height: 72px;
+    width: calc(60% + 62px);
+    position: absolute;
+    top: calc(50% - 36px);
+    left: 50%;
+    background-color: #FFFFFF11;
+    backdrop-filter: blur(15px);
+    z-index: -1;
 }
 
 .logoWrapper{
@@ -51,14 +76,32 @@ header{
 
 .headerLine{
     flex: 1;
+    position: relative;
+}
+
+.headerLine::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 0.5px);
+    height: 1px;
+    width: calc(130% + 32px);
+    background-color: #FFF;
 }
 
 .menuDeskWrapper{
     width: 60%;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .menuDeskWrapper ul{
     display: flex;
     align-items: center;
     list-style: none;
+    justify-content: flex-end;
+}
+
+.menuDeskWrapper ul a{
+    padding: 2px 32px;
 }
