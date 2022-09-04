@@ -11,6 +11,7 @@ body{
 
 a{
     color: #FFF;
+    text-decoration: none;
 }
 
 h1,h2,h3,h4{
@@ -86,7 +87,7 @@ header::after{
     top: calc(50% - 0.5px);
     height: 1px;
     width: calc(130% + 32px);
-    background-color: #FFF;
+    background-color: #FFFFFF55;
 }
 
 .menuDeskWrapper{
