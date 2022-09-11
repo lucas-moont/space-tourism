@@ -108,3 +108,17 @@ header::after{
 .menuDeskWrapper ul a{
     padding: 2px 32px;
 }
+
+.headerNavLink span{
+    position: relative;
+}
+
+.headerNavLink span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -23px;
+    background-color: #FFF;
+    width: 100%;
+    height: 5px;
+}
