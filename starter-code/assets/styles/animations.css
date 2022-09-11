@@ -1,0 +1,9 @@
+@keyframes growLineWidth {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: calc(130% + 32px);
+    }
+}
