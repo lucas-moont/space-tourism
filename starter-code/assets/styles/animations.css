@@ -7,3 +7,13 @@
         width: calc(130% + 32px);
     }
 }
+
+@keyframes showOpacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
