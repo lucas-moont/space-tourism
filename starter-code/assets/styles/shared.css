@@ -51,6 +51,7 @@ header{
     justify-content: center;
     position: relative;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 header::after{
@@ -108,6 +109,10 @@ header::after{
 
 .menuDeskWrapper ul a{
     padding: 32px 32px;
+}
+
+.menuDeskWrapper ul a:last-of-type{
+    padding-right: 0;
 }
 
 .headerNavLink span{
