@@ -142,8 +142,19 @@ header::after{
     justify-content: center;
 }
 
+.firstCol{
+    animation: enterLeft 1s forwards;
+}
+
+.secondCol{
+    animation: enterRight 1s forwards;
+}
+
 .firstCol,
 .secondCol{
     width: 50%;
     flex-shrink: 0;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    opacity: 0;
 }
