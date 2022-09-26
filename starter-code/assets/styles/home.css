@@ -6,3 +6,37 @@ body{
     min-height: 100vh;
     width: 100vw;
 }
+
+#spaceSection{
+    display: flex;
+    justify-content: center;
+    padding: 128px 32px 64px 128px;
+    font-weight: 300;
+    color: #d0d6f9;
+}
+
+
+#spaceSection h1{
+    color: #FFF;
+    position: relative;
+    left: -13px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+#spaceSection .container p:first-of-type{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+#spaceSection .container p:last-of-type{
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.firstCol{
+    padding-right: 168px;
+}

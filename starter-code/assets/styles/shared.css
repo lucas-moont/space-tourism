@@ -134,3 +134,16 @@ header::after{
 .headerNavLink:hover span::after{
     opacity: 1;
 }
+
+.container{
+    width: 100%;
+    max-width: 1353px;
+    display: flex;
+    justify-content: center;
+}
+
+.firstCol,
+.secondCol{
+    width: 50%;
+    flex-shrink: 0;
+}
