@@ -7,6 +7,7 @@
 body{
     color: #FFF;
     font-family: 'Barlow Condensed', sans-serif;
+    overflow-x: hidden;
 }
 
 a{

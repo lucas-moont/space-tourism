@@ -40,3 +40,31 @@ body{
 .firstCol{
     padding-right: 168px;
 }
+
+.secondCol{
+    padding-left: 168px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.exploreBtn{
+    font-size: 34px;
+    letter-spacing: 5px;
+    color: #000;
+    font-weight: 300;
+    font-family: 'Bellefair', serif;
+    background-color: #FFF;
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    border: 0px solid #FFFFFF55;
+    position: relative;
+    z-index: 4;
+    transition: 0.5s;
+}
