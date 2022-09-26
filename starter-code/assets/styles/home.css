@@ -39,4 +39,8 @@ body{
 
 .firstCol{
     padding-right: 168px;
+    animation: enterLeft 1s forwards;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    opacity: 0;
 }
