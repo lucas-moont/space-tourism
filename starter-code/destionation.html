@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/styles/home.css">
+  <link rel="stylesheet" href="assets/styles/destionation.css">
   <link rel="stylesheet" href="assets/styles/shared.css">
   <link rel="stylesheet" href="assets/styles/animations.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +21,8 @@
       <div class="menuDeskWrapper">
         <nav>
           <ul>
-            <li><a href="" class="headerNavLink linkActive"><span>00 Home</span></a></li>
-            <li><a href="" class="headerNavLink"><span>01 Destination</span></a></li>
+            <li><a href="" class="headerNavLink"><span>00 Home</span></a></li>
+            <li><a href="" class="headerNavLink linkActive"><span>01 Destination</span></a></li>
             <li><a href="" class="headerNavLink"><span>02 Crew</span></a></li>
             <li><a href="" class="headerNavLink"><span>03 Technology</span></a></li>
           </ul>
@@ -31,32 +31,38 @@
     </div>
   </header>
   <main>
-    <section id="spaceSection">
+    <section id="destSection">
       <div class="container">
         <div class="firstCol">
-          <p>So, you want to travel to</p>
-          <h1>Space</h1>
-          <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
-            outer space and not hover kind of on the edge of it. Well sit back, and relax 
-            because we’ll give you a truly out of this world experience!</p>
+          <h1><span>01</span> PICK YOUR DESTINATION</h1>
+          <div class="destImgHolder">
+            <img src="/assets/destination/image-moon.png" alt="">
+          </div>
         </div>
         <div class="secondCol">
-          <a href="destination.html" class="exploreBtn"><span>EXPLORE</span></a>
+
         </div>
       </div>
     </section>
   </main>
-  <script>
-    var docWidth = document.documentElement.offsetWidth;
 
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
-  </script>
+  01 Pick your destination
+
+  Moon
+  Mars
+  Europa
+  Titan
+
+  Mars
+
+  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+  the tallest planetary mountain in our solar system. It’s two and a half times 
+  the size of Everest!
+
+  Avg. distance
+  225 mil. km
+
+  Est. travel time
+  9 months
 </body>
 </html>

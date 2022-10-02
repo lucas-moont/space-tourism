@@ -10,11 +10,12 @@ body{
 #spaceSection{
     display: flex;
     justify-content: center;
-    padding: 128px 32px 64px 32px;
     font-weight: 300;
     color: #d0d6f9;
     overflow-x: hidden;
     max-width: 100%;
+    padding-top: 128px;
+    padding-bottom: 128px;
 }
 
 
@@ -24,6 +25,11 @@ body{
     left: -13px;
     text-transform: uppercase;
     margin-bottom: 32px;
+}
+
+#spaceSection .container{
+    padding-left: 128px;
+    padding-right: 32px;
 }
 
 #spaceSection .container p:first-of-type{
