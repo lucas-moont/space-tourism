@@ -8,6 +8,9 @@ body{
 
 #destSection{
     padding: 64px 32px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 #destSection h1{
@@ -28,4 +31,25 @@ body{
 
 .destImgHolder{
     text-align: center;
+}
+
+.destBtn{
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: 'Barlow Condensed';
+    font-weight: 300;
+    padding: 0 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.firstCol{
+    padding-right: 32px;
+}
+
+.secondCol{
+    padding-left: 32px;
 }
