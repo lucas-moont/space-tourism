@@ -7,7 +7,7 @@ body{
 }
 
 #destSection{
-    padding: 64px 32px;
+    padding: 64px 32px 64px 32px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -85,4 +85,26 @@ body{
 
 .secondCol{
     padding-left: 32px;
+    align-self: center;
+}
+
+.destinations{
+    margin-bottom: 32px;
+}
+
+.destDetails{
+    border-bottom: 1px solid var(--grey);
+    margin-bottom: 16px;
+}
+
+.destDetails h2{
+    color: #F1F1F1;
+    margin-bottom: 16px;
+}
+
+.destDetails p{
+    font-size: 24px;
+    color: var(--lightGrey);
+    font-weight: 400;
+    margin-bottom: 128px;
 }
