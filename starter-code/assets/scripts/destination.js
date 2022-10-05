@@ -14,6 +14,7 @@ destinationsBtns.forEach((button, index) => {
         for (var i = 0; i < destinationsBtns.length; i++){
             destinationsBtns[i].classList.remove('destActive')
         }
+        button.classList.add('destActive')
         let destinationData = event.target.getAttribute('data-destination')
         destinationData = destinationData.toUpperCase()
         if(destinationData == 'MARS'){
