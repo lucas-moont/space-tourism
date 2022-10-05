@@ -100,6 +100,7 @@ body{
 .destDetails h2{
     color: #F1F1F1;
     margin-bottom: 16px;
+    text-transform: uppercase;
 }
 
 .destDetails p{
