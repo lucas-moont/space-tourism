@@ -109,3 +109,30 @@ body{
     font-weight: 400;
     margin-bottom: 128px;
 }
+
+.travelDetailType{
+    font-weight: 400;
+    color: var(--lightGrey);
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.travellingDetails{
+    display: flex;
+    width: 100%;
+}
+
+.travellingDetails .travelFirstCol,
+.travellingDetails .travelSecondCol{
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.travelDetail{
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    color: var(--greyishWhite);
+    font-weight: 500;
+    font-size: 28px;
+}
