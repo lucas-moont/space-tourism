@@ -7,8 +7,13 @@ const destDescription = document.querySelector('#destDescription')
 const destDistance = document.querySelector('#destDistance')
 const destTravelTime = document.querySelector('#destTravelTime')
 
-document.querySelectorAll('.destBtn').forEach((item, index) => {
-    item.addEventListener('click', (event) => {
+let destinationsBtns = document.querySelectorAll('.destBtn')
+
+destinationsBtns.forEach((button, index) => {
+    button.addEventListener('click', (event) => {
+        for (var i = 0; i < destinationsBtns.length; i++){
+            destinationsBtns[i].classList.remove('destActive')
+        }
         let destinationData = event.target.getAttribute('data-destination')
         destinationData = destinationData.toUpperCase()
         if(destinationData == 'MARS'){
