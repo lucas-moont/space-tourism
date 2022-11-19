@@ -160,7 +160,7 @@ header::after{
     justify-content: center;
 }
 
-.firstCol{
+.enterLeftClass{
     animation: enterLeft 1s forwards;
 }
 

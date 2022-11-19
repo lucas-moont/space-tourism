@@ -1,4 +1,6 @@
 import myJson from '../../data.json' assert {type: 'json'}
+import { animateChangeColumns } from './animate.js'
+
 
 const destinations = myJson.destinations
 const destImg = document.querySelector('#destinationImg')
@@ -44,3 +46,7 @@ destinationsBtns.forEach((button, index) => {
         }
     })
 })
+
+setTimeout(() => {
+    animateChangeColumns()
+}, 5000);
