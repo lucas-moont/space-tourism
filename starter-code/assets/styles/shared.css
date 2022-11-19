@@ -164,11 +164,19 @@ header::after{
     animation: enterLeft 1s forwards;
 }
 
+.outLeftClass{
+    animation: outRight 1s forwards;
+}
+
 .secondCol{
     animation: enterRight 1s forwards;
 }
 
-.firstCol,
+.firstCol{
+    opacity: 0;
+}
+
+.enterLeftClass,
 .secondCol{
     width: 50%;
     animation-delay: 1s;

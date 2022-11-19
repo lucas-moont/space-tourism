@@ -1,5 +1,4 @@
-/*export function animateChangeColumns(){
-    const firstCol = document.querySelector('.firstCol') 
+/*export function animateChangeColumns(){ 
     firstCol.animate(
         [
             {transform: 'translateX(0px)'},

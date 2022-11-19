@@ -1,5 +1,5 @@
 import myJson from '../../data.json' assert {type: 'json'}
-import { animateChangeColumns } from './animate.js'
+//import { animateChangeColumns } from './animate.js'
 
 
 const destinations = myJson.destinations
@@ -8,7 +8,7 @@ const destName = document.querySelector('#destinationName')
 const destDescription = document.querySelector('#destDescription')
 const destDistance = document.querySelector('#destDistance')
 const destTravelTime = document.querySelector('#destTravelTime')
-
+const firstCol = document.querySelector('.firstCol')
 let destinationsBtns = document.querySelectorAll('.destBtn')
 
 destinationsBtns.forEach((button, index) => {
@@ -19,31 +19,39 @@ destinationsBtns.forEach((button, index) => {
         button.classList.add('destActive')
         let destinationData = event.target.getAttribute('data-destination')
         destinationData = destinationData.toUpperCase()
-        if(destinationData == 'MOON'){
-            destName.innerHTML = destinations[0].name
-            destImg.src = destinations[0].images.png
-            destDescription.innerHTML = destinations[0].description
-            destDistance.innerHTML = destinations[0].distance
-            destTravelTime.innerHTML = destinations[0].travel
-        }else if(destinationData == 'MARS'){
-            destName.innerHTML = destinations[1].name
-            destImg.src = destinations[1].images.png
-            destDescription.innerHTML = destinations[1].description
-            destDistance.innerHTML = destinations[1].distance
-            destTravelTime.innerHTML = destinations[1].travel
-        }else if(destinationData == 'EUROPA'){
-            destName.innerHTML = destinations[2].name
-            destImg.src = destinations[2].images.png
-            destDescription.innerHTML = destinations[2].description
-            destDistance.innerHTML = destinations[2].distance
-            destTravelTime.innerHTML = destinations[2].travel
-        }else if(destinationData == 'TITAN'){
-            destName.innerHTML = destinations[3].name
-            destImg.src = destinations[3].images.png
-            destDescription.innerHTML = destinations[3].description
-            destDistance.innerHTML = destinations[3].distance
-            destTravelTime.innerHTML = destinations[3].travel
-        }
+        firstCol.classList.remove("enterLeftClass");  
+        void firstCol.offsetWidth;
+        firstCol.classList.add("outLeftClass");
+        setTimeout(() => {
+            firstCol.classList.remove("outLeftClass");  
+            void firstCol.offsetWidth;
+            firstCol.classList.add("enterLeftClass");
+            if(destinationData == 'MOON'){
+                destName.innerHTML = destinations[0].name
+                destImg.src = destinations[0].images.png
+                destDescription.innerHTML = destinations[0].description
+                destDistance.innerHTML = destinations[0].distance
+                destTravelTime.innerHTML = destinations[0].travel
+            }else if(destinationData == 'MARS'){
+                destName.innerHTML = destinations[1].name
+                destImg.src = destinations[1].images.png
+                destDescription.innerHTML = destinations[1].description
+                destDistance.innerHTML = destinations[1].distance
+                destTravelTime.innerHTML = destinations[1].travel
+            }else if(destinationData == 'EUROPA'){
+                destName.innerHTML = destinations[2].name
+                destImg.src = destinations[2].images.png
+                destDescription.innerHTML = destinations[2].description
+                destDistance.innerHTML = destinations[2].distance
+                destTravelTime.innerHTML = destinations[2].travel
+            }else if(destinationData == 'TITAN'){
+                destName.innerHTML = destinations[3].name
+                destImg.src = destinations[3].images.png
+                destDescription.innerHTML = destinations[3].description
+                destDistance.innerHTML = destinations[3].distance
+                destTravelTime.innerHTML = destinations[3].travel
+            }
+        }, 1500);
     })
 })
 
