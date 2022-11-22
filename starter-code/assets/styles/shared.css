@@ -164,20 +164,25 @@ header::after{
     animation: enterLeft 1s forwards;
 }
 
-.outLeftClass{
+.outRightClass{
     animation: outRight 1s forwards;
 }
 
-.secondCol{
+.enterRightClass{
     animation: enterRight 1s forwards;
 }
 
-.firstCol{
+.outLeftClass{
+    animation: outLeft 1s forwards;
+}
+
+.firstCol,
+.secondCol{
     opacity: 0;
 }
 
 .enterLeftClass,
-.secondCol{
+.enterRightClass{
     width: 50%;
     animation-delay: 1s;
     animation-timing-function: ease-out;

@@ -53,3 +53,15 @@
         transform: translateX(-16px);
     }
 }
+
+@keyframes outLeft{
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(16px);
+    }
+}

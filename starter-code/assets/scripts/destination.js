@@ -1,5 +1,5 @@
 import myJson from '../../data.json' assert {type: 'json'}
-//import { animateChangeColumns } from './animate.js'
+import { animateOutColumn } from './animate.js'
 
 
 const destinations = myJson.destinations
@@ -19,11 +19,9 @@ destinationsBtns.forEach((button, index) => {
         button.classList.add('destActive')
         let destinationData = event.target.getAttribute('data-destination')
         destinationData = destinationData.toUpperCase()
-        firstCol.classList.remove("enterLeftClass");  
-        void firstCol.offsetWidth;
-        firstCol.classList.add("outLeftClass");
+        animateOutColumn(firstCol)
         setTimeout(() => {
-            firstCol.classList.remove("outLeftClass");  
+            firstCol.classList.remove("outRightClass");  
             void firstCol.offsetWidth;
             firstCol.classList.add("enterLeftClass");
             if(destinationData == 'MOON'){
