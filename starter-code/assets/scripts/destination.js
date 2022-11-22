@@ -1,5 +1,5 @@
 import myJson from '../../data.json' assert {type: 'json'}
-import { animateOutColumn } from './animate.js'
+import { animateOutColumn, animateEnterColumn } from './animate.js'
 
 
 const destinations = myJson.destinations
@@ -8,7 +8,8 @@ const destName = document.querySelector('#destinationName')
 const destDescription = document.querySelector('#destDescription')
 const destDistance = document.querySelector('#destDistance')
 const destTravelTime = document.querySelector('#destTravelTime')
-const firstCol = document.querySelector('.firstCol')
+const firstCol = document.querySelector('.destImgHolder')
+const secondCol = document.querySelector('.secondCol')
 let destinationsBtns = document.querySelectorAll('.destBtn')
 
 destinationsBtns.forEach((button, index) => {
@@ -19,11 +20,9 @@ destinationsBtns.forEach((button, index) => {
         button.classList.add('destActive')
         let destinationData = event.target.getAttribute('data-destination')
         destinationData = destinationData.toUpperCase()
-        animateOutColumn(firstCol)
+        animateOutColumn(firstCol, secondCol)
         setTimeout(() => {
-            firstCol.classList.remove("outRightClass");  
-            void firstCol.offsetWidth;
-            firstCol.classList.add("enterLeftClass");
+            animateEnterColumn(firstCol, secondCol)
             if(destinationData == 'MOON'){
                 destName.innerHTML = destinations[0].name
                 destImg.src = destinations[0].images.png
@@ -52,7 +51,3 @@ destinationsBtns.forEach((button, index) => {
         }, 1500);
     })
 })
-
-setTimeout(() => {
-    animateChangeColumns()
-}, 5000);

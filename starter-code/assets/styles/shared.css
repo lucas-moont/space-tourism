@@ -165,7 +165,7 @@ header::after{
 }
 
 .outRightClass{
-    animation: outRight 1s forwards;
+    animation: outRight 0.5s forwards;
 }
 
 .enterRightClass{
@@ -173,18 +173,17 @@ header::after{
 }
 
 .outLeftClass{
-    animation: outLeft 1s forwards;
+    animation: outLeft 0.5s forwards;
 }
 
 .firstCol,
 .secondCol{
     opacity: 0;
+    width: 50%;
 }
 
 .enterLeftClass,
 .enterRightClass{
-    width: 50%;
     animation-delay: 1s;
     animation-timing-function: ease-out;
-    opacity: 0;
 }
