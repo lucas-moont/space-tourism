@@ -48,4 +48,19 @@ body{
     margin-left: 16px;
 }
 
+.firstCol{
+    padding-right: 32px;
+}
+
+.secondCol{
+    padding-left: 32px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+img{
+    max-width: 100%;
+}
+
 /*CREW BTN*/
