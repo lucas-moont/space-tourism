@@ -1,0 +1,51 @@
+body{
+    background-image: url('../crew/background-crew-desktop.jpg');
+}
+
+#crew{
+    padding-bottom: 0;
+}
+
+.crewJob{
+    color: var(--grey);
+    font-size: 42px;
+    line-height: 1em;
+}
+
+.crewName{
+    font-size: 60px;
+    margin-bottom: 64px;
+    line-height: 1.3em;
+    margin-top: -8px;
+}
+
+.crewButtons{
+    margin-top: 128px;
+}
+
+.crewDescription{
+    font-size: 28px;
+    font-weight: 200;
+    color: var(--greyishWhite);
+}
+
+.crewBtn{
+    height: 15px;
+    width: 15px;
+    border: 0;
+    background-color: #FFFFFF55;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.crewBtnActive,
+.crewBtn:hover{
+    background-color: #FFF;
+}
+
+.crewBtn:not(:first-child){
+    margin-left: 16px;
+}
+
+/*CREW BTN*/

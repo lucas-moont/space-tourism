@@ -4,29 +4,6 @@ body{
     background-position: center;
 }
 
-#destSection{
-    padding: 64px 32px 64px 32px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-#destSection h1{
-    font-size: 28px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 300;
-    color: #FFF;
-    letter-spacing: 5px;
-    word-spacing: 1px;
-    margin-bottom: 64px;
-}
-
-#destSection h1 span{
-    margin-right: 8px;
-    color: var(--grey);
-    font-weight: 600;
-}
-
 .destImgHolder{
     text-align: center;
 }

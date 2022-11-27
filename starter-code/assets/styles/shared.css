@@ -187,3 +187,26 @@ header::after{
     animation-delay: 1s;
     animation-timing-function: ease-out;
 }
+
+h1{
+    font-size: 28px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    letter-spacing: 5px;
+    word-spacing: 1px;
+    margin-bottom: 64px;
+}
+
+section{
+    padding: 64px 32px 64px 32px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 span{
+    margin-right: 8px;
+    color: var(--grey);
+    font-weight: 600;
+}

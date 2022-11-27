@@ -25,6 +25,7 @@ body{
     left: -13px;
     text-transform: uppercase;
     margin-bottom: 32px;
+    font-size: 128px;
 }
 
 #spaceSection .container{
@@ -91,4 +92,9 @@ body{
 
 .exploreBtn:hover span{
     transform: scale(0.7);
+}
+
+#spaceSection .firstCol,
+#spaceSection .secondCol{
+    opacity: 1;
 }
