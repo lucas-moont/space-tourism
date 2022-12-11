@@ -17,10 +17,15 @@ changeCrewBtns.forEach((element, index) => {
         let crewBio = document.querySelector('.crewDescription')
         let crewAvatar = document.querySelector('.crewAvatar')
 
-        crewRole.innerHTML = crew[index].role.toUpperCase() 
-        crewName.innerHTML = crew[index].name.toUpperCase()
-        crewBio.innerHTML = crew[index].bio
-        crewAvatar.src = crew[index].images.webp
+        let crewLeft = document.querySelector('.crewDetails')
 
+        animateOutColumn(crewLeft, crewAvatar)
+        setTimeout(() => {
+            animateEnterColumn(crewLeft, crewAvatar)
+            crewRole.innerHTML = crew[index].role.toUpperCase() 
+            crewName.innerHTML = crew[index].name.toUpperCase()
+            crewBio.innerHTML = crew[index].bio
+            crewAvatar.src = crew[index].images.webp
+        }, 1500);
     })
 });
