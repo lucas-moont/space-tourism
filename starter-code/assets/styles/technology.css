@@ -1,0 +1,22 @@
+body{
+    background-image: url(/starter-code/assets/technology/background-technology-desktop.jpg);
+}
+
+#technology{
+    flex-wrap: wrap;
+    padding-right: 0;
+}
+
+h1{
+    text-align: left;
+    width: 100%;
+    padding: 0 32px;
+}
+
+#technology .container{
+    align-items: center;
+}
+
+#technology .secondCol{
+    text-align: right;
+}
