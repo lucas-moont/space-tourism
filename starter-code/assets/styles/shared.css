@@ -3,7 +3,8 @@
  --darkBlue: #0B0D17;   
  --grey: #424657;
  --lightGrey: #676c81;
- --greyishWhite: #a3a4a8 ;
+ --greyishWhite: #a3a4a8;
+ --fontTitle: 'Barlow Condensed', sans-serif;
 }
 
 *{

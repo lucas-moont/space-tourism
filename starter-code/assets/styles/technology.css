@@ -20,3 +20,31 @@ h1{
 #technology .secondCol{
     text-align: right;
 }
+
+.firstCol{
+    display: flex;
+    align-items: center;
+}
+
+.theTermino{
+    font-size: 28px;
+    color: var(--blue);
+    font-family: var(--fontTitle);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+}
+
+.techName{
+    text-transform: uppercase;
+    font-size: 68px;
+    line-height: 1.1em;
+    margin-bottom: 32px;
+}
+
+.techDescription{
+    color: var(--blue);
+    font-weight: 400;
+    font-size: 20px;
+}
