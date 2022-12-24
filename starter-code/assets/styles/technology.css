@@ -48,3 +48,19 @@ h1{
     font-weight: 400;
     font-size: 20px;
 }
+
+#technology ul{
+    list-style: none;
+}
+
+#technology li{
+    margin-left: 0;
+}
+
+#technology ul li:not(:first-of-type){
+    margin-top: 16px;
+}
+
+.techButtons{
+    margin-right: 64px;
+}
