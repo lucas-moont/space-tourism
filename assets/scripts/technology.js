@@ -14,7 +14,10 @@ techButtons.forEach((element, index) => {
         for(let i = 0; i < techButtons.length; i++){
             techButtons[i].classList.remove(techActiveClass)
         }
-        animateOutColumn(crewLeft, crewAvatar)
+        let techLeft = document.querySelector('.techDetails')
+        let techRight = document.querySelector('.secondCol')
+
+        animateOutColumn(techLeft, techRight)
 
 
         techName.innerHTML = tech[index].name.toUpperCase()
