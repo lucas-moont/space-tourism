@@ -23,7 +23,9 @@ techButtons.forEach((element, index) => {
             techName.innerHTML = tech[index].name.toUpperCase()
             techDescription.innerHTML = tech[index].description
             techAvatar.src = tech[index].images.portrait
-            animateEnterColumn(techLeft, techRight)
+            setTimeout(() => {
+              animateEnterColumn(techLeft, techRight)
+            }, 200);
         }, 1500);
 
         element.classList.add(techActiveClass)
