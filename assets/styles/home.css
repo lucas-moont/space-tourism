@@ -24,8 +24,9 @@ body{
     position: relative;
     left: -13px;
     text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
     font-size: 128px;
+    line-height: 1em;
 }
 
 #spaceSection .container{
@@ -37,7 +38,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 28px;
-    margin-bottom: 16px;
+    margin-bottom: -8px;
 }
 
 #spaceSection .container p:last-of-type{
