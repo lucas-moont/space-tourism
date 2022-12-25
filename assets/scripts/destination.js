@@ -9,7 +9,7 @@ const destDescription = document.querySelector('#destDescription')
 const destDistance = document.querySelector('#destDistance')
 const destTravelTime = document.querySelector('#destTravelTime')
 const firstCol = document.querySelector('.destImgHolder')
-const secondCol = document.querySelector('.destionationDetailsWrapperbb ')
+const secondCol = document.querySelector('.destionationDetailsWrapper')
 let destinationsBtns = document.querySelectorAll('.destBtn')
 
 destinationsBtns.forEach((button, index) => {
