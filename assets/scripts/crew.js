@@ -21,11 +21,11 @@ changeCrewBtns.forEach((element, index) => {
 
         animateOutColumn(crewLeft, crewAvatar)
         setTimeout(() => {
-            animateEnterColumn(crewLeft, crewAvatar)
             crewRole.innerHTML = crew[index].role.toUpperCase() 
             crewName.innerHTML = crew[index].name.toUpperCase()
             crewBio.innerHTML = crew[index].bio
             crewAvatar.src = crew[index].images.webp
+            animateEnterColumn(crewLeft, crewAvatar)
         }, 1500);
     })
 });
