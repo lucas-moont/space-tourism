@@ -191,7 +191,6 @@ header::after{
 
 h1{
     font-size: 28px;
-    font-family: 'Barlow Condensed', sans-serif;
     font-weight: 300;
     color: #FFF;
     letter-spacing: 5px;
@@ -230,8 +229,12 @@ h1 span{
         top: 0;
     }
 
+    .menuDeskWrapper{
+        font-size: 18px;
+    } 
+
     .headerNavLink span::after{
-        bottom: -25px;
+        bottom: -27px;
     }
     
     .headerLine::after{

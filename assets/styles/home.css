@@ -38,7 +38,6 @@ body{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 28px;
-    margin-bottom: -8px;
 }
 
 #spaceSection .container p:last-of-type{
@@ -127,8 +126,9 @@ body{
     }
 
     #spaceSection h1{
-        font-size: 128px;
-        margin-bottom: 32px;
+        font-size: 94px;
+        margin-bottom: 16px;
+        left: 0;
     }
 
     #spaceSection .container p:last-of-type{
@@ -139,7 +139,7 @@ body{
         justify-content: center;
         align-items: center;
         height: auto;
-        padding-top: 128px;
+        padding-top: 64px;
     }
 
     .exploreBtn{
