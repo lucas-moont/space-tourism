@@ -99,3 +99,35 @@ body{
 #spaceSection .secondCol{
     opacity: 1;
 }
+
+@media (max-width: 966px){
+    body{
+        background-image: url('/assets/home/background-home-tablet.jpg');
+    }
+
+    .firstCol{
+        padding-right: 0;
+    }
+
+    .secondCol{
+        padding-left: 0;
+    }
+
+    #spaceSection .container{
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    #spaceSection .container p:first-of-type{
+        font-size: 16px;
+    }
+
+    #spaceSection h1{
+        font-size: 128px;
+        margin-bottom: 32px;
+    }
+
+    #spaceSection .container p:last-of-type{
+        font-size: 18px;
+    }
+}

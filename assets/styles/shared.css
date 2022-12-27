@@ -237,4 +237,10 @@ h1 span{
     .headerLine::after{
         display: none;
     }   
+
+    
+    .firstCol, .secondCol{
+        width: 100%;
+        text-align: center;
+    }
 }
