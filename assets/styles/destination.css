@@ -112,3 +112,32 @@ body{
     font-weight: 500;
     font-size: 28px;
 }
+
+@media (max-width: 966px){
+    #destSection .container{
+        flex-wrap: wrap;
+    }
+
+    .firstCol{
+        padding-right: 0;
+    }
+
+    #destSection h1{
+        text-align: left;
+        margin-bottom: 32px;
+        font-size: 24px;
+    }
+
+    #destSection img{
+        max-width: 350px;
+    }
+
+    .secondCol{
+        padding-left: 0;
+        padding-top: 32px;
+    }
+
+    #destinationName{
+        font-size: 90px;
+    }
+}
