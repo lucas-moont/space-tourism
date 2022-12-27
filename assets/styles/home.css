@@ -113,6 +113,10 @@ body{
         padding-left: 0;
     }
 
+    #spaceSection{
+        padding: 78px 16px;
+    }
+
     #spaceSection .container{
         padding: 0;
         flex-wrap: wrap;
@@ -129,5 +133,18 @@ body{
 
     #spaceSection .container p:last-of-type{
         font-size: 18px;
+    }
+
+    .secondCol{
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding-top: 128px;
+    }
+
+    .exploreBtn{
+        height: 200px;
+        width: 200px;
+        font-size: 26px;
     }
 }
