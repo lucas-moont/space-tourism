@@ -211,3 +211,30 @@ h1 span{
     color: var(--grey);
     font-weight: 600;
 }
+
+@media (max-width: 966px){
+    header{
+        padding: 0;
+    }
+
+    .headerContainer{
+        padding: 16px;
+        padding-top: 0;
+    }
+
+    .logoWrapper{
+        padding-top: 16px;
+    }
+
+    header::after{
+        top: 0;
+    }
+
+    .headerNavLink span::after{
+        bottom: -25px;
+    }
+    
+    .headerLine::after{
+        display: none;
+    }   
+}
