@@ -114,6 +114,9 @@ body{
 }
 
 @media (max-width: 966px){
+    #destSection{
+        padding: 64px 16px;
+    }
     #destSection .container{
         flex-wrap: wrap;
     }
@@ -124,7 +127,6 @@ body{
 
     #destSection h1{
         text-align: left;
-        margin-bottom: 32px;
         font-size: 24px;
     }
 
@@ -134,7 +136,7 @@ body{
 
     .secondCol{
         padding-left: 0;
-        padding-top: 32px;
+        padding-top: 64px;
     }
 
     #destinationName{
