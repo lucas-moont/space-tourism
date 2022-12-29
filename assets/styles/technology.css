@@ -7,10 +7,11 @@ body{
     padding-right: 0;
 }
 
-h1{
+#technology h1{
     text-align: left;
     width: 100%;
     padding: 0 32px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 #technology .container{
@@ -106,8 +107,26 @@ h1{
         flex-flow: column-reverse;
     }
 
+    #technology h1{
+        padding: 0;
+    }
+
     #technology .firstCol{
         flex-flow: column-reverse;
+    }
+
+    .theTermino{
+        font-size: 26px;
+    }
+
+    .techName{
+        font-size: 46px;
+        margin-bottom: 16px;
+    }
+
+    .techDescription{
+        font-size: 20px;
+        max-width: 520px;
     }
 
     .techButtons{
