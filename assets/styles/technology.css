@@ -91,3 +91,44 @@ h1{
     color: var(--darkBlue);
     background-color: #FFF;
 }
+
+@media (max-width: 966px){
+    body{
+        background-image: url('/assets/technology/background-technology-tablet.jpg');
+    }
+    
+    #technology{
+        padding: 32px 16px;
+    }
+
+    #technology .container{
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+    }
+
+    #technology .firstCol{
+        flex-flow: column-reverse;
+    }
+
+    .techButtons{
+        margin-right: 0;
+        margin-top: 32px;
+    }
+
+    #technology ul{
+        display: flex;
+    }
+
+    #technology li{
+        margin: 0 16px;
+    }
+
+    #technology ul li:not(:first-of-type){
+        margin-top: 0;
+    }
+
+    #technology .secondCol{
+        text-align: center;
+        display: none;
+    }
+}
