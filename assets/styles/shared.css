@@ -310,8 +310,8 @@ h1 span{
 }
 
 @media (max-width: 767px){
-    header{
-        overflow-x: hidden;
+    header::after{
+        display: none;
     }
 
     .menuMobileWrapper{
@@ -320,6 +320,10 @@ h1 span{
 
     .menuDeskWrapper{
         display: none;
+    }
+
+    .menuMobileBtnWrapper{
+        display: block;
     }
 }
 
