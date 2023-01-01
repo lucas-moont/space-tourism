@@ -243,7 +243,16 @@ h1 span{
     backdrop-filter: blur(10px);
 }
 
+.menuMobile .headerNavLink{
+    font-size: 22px;
+    font-weight: 300;
+}
 
+.menuMobile .headerNavLink.linkActive span::after,
+.menuMobile .headerNavLink span::after{
+    bottom: -1px;
+    height: 2px;
+}
 
 @media (max-width: 966px){
     header{
