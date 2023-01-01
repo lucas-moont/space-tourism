@@ -310,6 +310,11 @@ h1 span{
 }
 
 @media (max-width: 767px){
+    html,
+    body{
+        overflow-x: hidden;
+    }
+
     header::after{
         display: none;
     }
