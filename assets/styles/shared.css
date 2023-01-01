@@ -227,9 +227,8 @@ h1 span{
     display: flex;
     justify-content: flex-end;
     z-index: 100;
+    transition: 0.5s;
 }
-
-
 
 .menuMobileWrapper ul li{
     list-style: none;
@@ -257,6 +256,16 @@ h1 span{
 .menuMobile .headerNavLink span::after{
     bottom: -2px;
     height: 2px;
+}
+
+.closeBtnWrapper{
+    margin-bottom: 32px;
+    text-align: right;
+}
+
+.closeBtn{
+    background-color: transparent;
+    border: 0;
 }
 
 @media (max-width: 966px){
@@ -293,5 +302,12 @@ h1 span{
     .firstCol, .secondCol{
         width: 100%;
         text-align: center;
+    }
+}
+
+@media (max-width: 375px){
+    .menuMobile{
+        min-width: 0;
+        width: 100%;
     }
 }
