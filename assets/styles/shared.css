@@ -229,11 +229,21 @@ h1 span{
     z-index: 100;
 }
 
-.menuMobile .headerNavLink.linkActive span::after,
-.menuMobile .headerNavLink span::after{
-    bottom: -1px;
-    height: 2px;
+
+
+.menuMobileWrapper ul li{
+    list-style: none;
+    margin: 0 0 16px;
 }
+
+.menuMobile{
+    padding: 32px;
+    width: 80%;
+    min-width: 360px;
+    backdrop-filter: blur(10px);
+}
+
+
 
 @media (max-width: 966px){
     header{
