@@ -221,13 +221,13 @@ h1 span{
 .menuMobileWrapper{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100vw;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: flex-end;
     z-index: 100;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .menuMobileWrapper ul li{

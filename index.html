@@ -29,12 +29,12 @@
         </nav>
       </div>
       <div class="menuMobileBtnWrapper">
-        <button class="hamburguerBtn"><img src="/assets/shared/icon-hamburger.svg" alt=""></button>
+        <button class="hamburguerBtn" onclick="showMobileMenu()"><img src="/assets/shared/icon-hamburger.svg" alt=""></button>
       </div>
       <div class="menuMobileWrapper">
         <div class="menuMobile">
           <div class="closeBtnWrapper">
-            <button class="closeBtn"><img src="/assets/shared/icon-close.svg" alt=""></button>
+            <button class="closeBtn" onclick="hideMobileMenu()"><img src="/assets/shared/icon-close.svg" alt=""></button>
           </div>
           <ul>
             <li><a href="index.html" class="headerNavLink linkActive"><span>00</span> Home</a></li>
@@ -62,17 +62,6 @@
       </div>
     </section>
   </main>
-  <script>
-    var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
-  </script>
+  <script src="/assets/scripts/menu.js"></script>
 </body>
 </html>
