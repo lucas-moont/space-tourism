@@ -1,81 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/styles/destination.css">
-  <link rel="stylesheet" href="assets/styles/shared.css">
-  <link rel="stylesheet" href="assets/styles/animations.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500;600;700&family=Bellefair&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Destionation</title>
-</head>
-<body>
-  <header>
-    <div class="headerContainer">
-      <div class="logoWrapper"><img src="assets/shared/logo.svg" alt="logo"></div>
-      <div class="headerLine"></div>
-      <div class="menuDeskWrapper">
-        <nav>
-          <ul>
-            <li><a href="index.html" class="headerNavLink"><span>00 Home</span></a></li>
-            <li><a href="destination.html" class="headerNavLink linkActive"><span>01 Destination</span></a></li>
-            <li><a href="crew.html" class="headerNavLink"><span>02 Crew</span></a></li>
-            <li><a href="technology.html" class="headerNavLink"><span>03 Technology</span></a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section id="destSection">
-      <div class="container">
-        <div class="firstCol enterLeftClass">
-          <h1><span>01</span> PICK YOUR DESTINATION</h1>
-          <div class="destImgHolder">
-            <img id="destinationImg" src="assets/destination/image-moon.png" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/destination.css" />
+    <link rel="stylesheet" href="assets/styles/shared.css" />
+    <link rel="stylesheet" href="assets/styles/animations.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500;600;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Destionation</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <div class="logoWrapper">
+          <img src="assets/shared/logo.svg" alt="logo" />
+        </div>
+        <div class="headerLine"></div>
+        <div class="menuDeskWrapper">
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html" class="headerNavLink linkActive"
+                  ><span>00 Home</span></a
+                >
+              </li>
+              <li>
+                <a href="destination.html" class="headerNavLink"
+                  ><span>01 Destination</span></a
+                >
+              </li>
+              <li>
+                <a href="crew.html" class="headerNavLink"
+                  ><span>02 Crew</span></a
+                >
+              </li>
+              <li>
+                <a href="technology.html" class="headerNavLink"
+                  ><span>03 Technology</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menuMobileBtnWrapper">
+          <button class="hamburguerBtn" onclick="showMobileMenu()">
+            <img src="/assets/shared/icon-hamburger.svg" alt="" />
+          </button>
+        </div>
+        <div class="menuMobileWrapper">
+          <div class="menuMobile">
+            <div class="closeBtnWrapper">
+              <button class="closeBtn" onclick="hideMobileMenu()">
+                <img src="/assets/shared/icon-close.svg" alt="" />
+              </button>
+            </div>
+            <ul>
+              <li>
+                <a href="index.html" class="headerNavLink linkActive"
+                  ><span>00</span> Home</a
+                >
+              </li>
+              <li>
+                <a href="destination.html" class="headerNavLink"
+                  ><span>01</span> Destination</a
+                >
+              </li>
+              <li>
+                <a href="crew.html" class="headerNavLink"
+                  ><span>02</span> Crew</a
+                >
+              </li>
+              <li>
+                <a href="technology.html" class="headerNavLink"
+                  ><span>03</span> Technology</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="secondCol enterRightClass">
-          <div class="destinations">
-            <button data-destination="moon" class="destBtn destActive">Moon</button>
-            <button data-destination="mars" class="destBtn">Mars</button>
-            <button data-destination="europa" class="destBtn">Europa</button>
-            <button data-destination="titan" class="destBtn">Titan</button>
-          </div>
-          <div class="destionationDetailsWrapper">
-            <div class="destDetails">
-              <h2 id="destinationName">MOON</h2>
-              <p id="destDescription">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-                regain perspective and come back refreshed. While you’re there, take in some history 
-              by visiting the Luna 2 and Apollo 11 landing sites.</p>
+      </div>
+    </header>
+    <main>
+      <section id="destSection">
+        <div class="container">
+          <div class="firstCol enterLeftClass">
+            <h1><span>01</span> PICK YOUR DESTINATION</h1>
+            <div class="destImgHolder">
+              <img
+                id="destinationImg"
+                src="assets/destination/image-moon.png"
+                alt=""
+              />
             </div>
-            <div class="travellingDetails">
-              <div class="travelFirstCol">
-                <div class="travelDetailType">
-                  Avg. distance
+          </div>
+          <div class="secondCol enterRightClass">
+            <div class="destinations">
+              <button data-destination="moon" class="destBtn destActive">
+                Moon
+              </button>
+              <button data-destination="mars" class="destBtn">Mars</button>
+              <button data-destination="europa" class="destBtn">Europa</button>
+              <button data-destination="titan" class="destBtn">Titan</button>
+            </div>
+            <div class="destionationDetailsWrapper">
+              <div class="destDetails">
+                <h2 id="destinationName">MOON</h2>
+                <p id="destDescription">
+                  See our planet as you’ve never seen it before. A perfect
+                  relaxing trip away to help regain perspective and come back
+                  refreshed. While you’re there, take in some history by
+                  visiting the Luna 2 and Apollo 11 landing sites.
+                </p>
+              </div>
+              <div class="travellingDetails">
+                <div class="travelFirstCol">
+                  <div class="travelDetailType">Avg. distance</div>
+                  <div id="destDistance" class="travelDetail">384,400 km</div>
                 </div>
-                <div id="destDistance" class="travelDetail">
-                  384,400 km
+                <div class="travelSecondCol">
+                  <div class="travelDetailType">Est. travel time</div>
+                  <div id="destTravelTime" class="travelDetail">3 days</div>
                 </div>
               </div>
-              <div class="travelSecondCol">
-                <div class="travelDetailType">
-                  Est. travel time
-                </div>
-                <div id="destTravelTime" class="travelDetail">
-                  3 days
-                </div>
-              </div>       
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <script type="module" src="assets/scripts/destination.js"></script>
-</body>
+      </section>
+    </main>
+    <script type="module" src="assets/scripts/destination.js"></script>
+    <script src="/assets/scripts/menu.js"></script>
+  </body>
 </html>

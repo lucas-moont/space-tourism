@@ -15,20 +15,36 @@
 </head>
 <body>
     <header>
-        <div class="headerContainer">
-            <div class="logoWrapper"><img src="assets/shared/logo.svg" alt="logo"></div>
-            <div class="headerLine"></div>
-            <div class="menuDeskWrapper">
-            <nav>
-                <ul>
-                <li><a href="index.html" class="headerNavLink"><span>00 Home</span></a></li>
-                <li><a href="destination.html" class="headerNavLink"><span>01 Destination</span></a></li>
-                <li><a href="crew.html" class="headerNavLink linkActive"><span>02 Crew</span></a></li>
-                <li><a href="technology.html" class="headerNavLink"><span>03 Technology</span></a></li>
-                </ul>
-            </nav>
-            </div>
-        </div>
+      <div class="headerContainer">
+          <div class="logoWrapper"><img src="assets/shared/logo.svg" alt="logo"></div>
+          <div class="headerLine"></div>
+          <div class="menuDeskWrapper">
+          <nav>
+              <ul>
+              <li><a href="index.html" class="headerNavLink linkActive"><span>00 Home</span></a></li>
+              <li><a href="destination.html" class="headerNavLink"><span>01 Destination</span></a></li>
+              <li><a href="crew.html" class="headerNavLink"><span>02 Crew</span></a></li>
+              <li><a href="technology.html" class="headerNavLink"><span>03 Technology</span></a></li>
+              </ul>
+          </nav>
+          </div>
+          <div class="menuMobileBtnWrapper">
+          <button class="hamburguerBtn" onclick="showMobileMenu()"><img src="/assets/shared/icon-hamburger.svg" alt=""></button>
+          </div>
+          <div class="menuMobileWrapper">
+          <div class="menuMobile">
+              <div class="closeBtnWrapper">
+              <button class="closeBtn" onclick="hideMobileMenu()"><img src="/assets/shared/icon-close.svg" alt=""></button>
+              </div>
+              <ul>
+              <li><a href="index.html" class="headerNavLink linkActive"><span>00</span> Home</a></li>
+              <li><a href="destination.html" class="headerNavLink"><span>01</span> Destination</a></li>
+              <li><a href="crew.html" class="headerNavLink"><span>02</span> Crew</a></li>
+              <li><a href="technology.html" class="headerNavLink"><span>03</span> Technology</a></li>
+              </ul>  
+          </div>
+          </div>
+      </div>
     </header>
     <main>
         <section id="crew">
@@ -56,5 +72,6 @@
         </section>
     </main>
     <script type="module" src="assets/scripts/crew.js"></script>
+    <script src="/assets/scripts/menu.js"></script>
 </body>
 </html>
