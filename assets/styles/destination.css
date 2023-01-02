@@ -143,3 +143,21 @@ body{
         font-size: 90px;
     }
 }
+
+@media (max-width: 767px){
+    body{
+        background-image: url('/assets/destination/background-destination-mobile.jpg');
+    }
+
+    #destSection img{
+        max-width: 100%;
+    }
+
+    #destSection h1{
+        text-align: center;
+    }
+
+    h1 span{
+        margin-right: 0;
+    }
+}
