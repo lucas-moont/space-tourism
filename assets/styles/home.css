@@ -148,3 +148,9 @@ body{
         font-size: 26px;
     }
 }
+
+@media (max-width: 767px){
+    body{
+        background-image: url('/assets/home/background-home-mobile.jpg');
+    }
+}
