@@ -8,6 +8,12 @@ body{
 
 #crew h1{
     font-family: 'Barlow Condensed', sans-serif;
+    width: 100%;
+    padding: 16px;
+}
+
+#crew{
+    flex-wrap: wrap;
 }
 
 .crewJob{
@@ -123,5 +129,28 @@ img{
 
     #crew img{
         max-width: 350px;
+    }
+}
+
+@media (max-width: 767px){
+    #crew h1{
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    #crew .container{
+        flex-direction: column-reverse;
+    }
+
+    #crew .secondCol{
+        padding: 0 16px;
+        padding-top: 0;
+        border-bottom: 1px solid #FFF;
+        margin-bottom: 32px;
+    }
+
+    #crew img{
+        max-width: 100%;
+        width: 250px;
     }
 }
