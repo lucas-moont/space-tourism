@@ -23,15 +23,28 @@ techButtons.forEach((element, index) => {
             setTimeout(() => {
                 changeDetailsPromise(index)
             }, 1500)
-        ).then(
-            setTimeout(() => {
-              animateEnterColumn(techLeft, techRight)
-            }, 1500)
         )
+        
+        if (techAvatar.style.display != 'none' || techAvatar.style.display != ''){
+            techAvatar.addEventListener('load', () => {
+                setTimeout(() => {
+                    animateEnterColumn(techLeft, techRight)
+                  }, 1000)       
+            })  
+        }
 
+        if (techAvatarMobile.style.display != 'none' || techAvatarMobile.style.display != ''){
+            techAvatar.addEventListener('load', () => {
+                setTimeout(() => {
+                    animateEnterColumn(techLeft, techRight)
+                  }, 1000)       
+            })  
+        }
         element.classList.add(techActiveClass)
     })
 })
+
+
 
 function changeDetailsPromise(index){
     return new Promise((resolve) => {
