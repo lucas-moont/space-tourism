@@ -1,6 +1,9 @@
 import myJson from '../../data.json' assert {type: 'json'}
 import { animateOutColumn, animateEnterColumn } from './animate.js'
-
+let crewRole = document.querySelector('.crewJob')
+let crewName = document.querySelector('.crewName')
+let crewBio = document.querySelector('.crewDescription')
+let crewAvatar = document.querySelector('.crewAvatar')
 
 const crew = myJson.crew
 
@@ -12,20 +15,38 @@ changeCrewBtns.forEach((element, index) => {
             changeCrewBtns[i].classList.remove('crewBtnActive')
         }
         element.classList.add('crewBtnActive')
-        let crewRole = document.querySelector('.crewJob')
-        let crewName = document.querySelector('.crewName')
-        let crewBio = document.querySelector('.crewDescription')
-        let crewAvatar = document.querySelector('.crewAvatar')
 
         let crewLeft = document.querySelector('.crewDetails')
 
-        animateOutColumn(crewLeft, crewAvatar)
-        setTimeout(() => {
-            crewRole.innerHTML = crew[index].role.toUpperCase() 
-            crewName.innerHTML = crew[index].name.toUpperCase()
-            crewBio.innerHTML = crew[index].bio
-            crewAvatar.src = crew[index].images.webp
-            animateEnterColumn(crewLeft, crewAvatar)
-        }, 1500);
+        animateOutColumnPromise(crewLeft, crewAvatar)
+        .then()
+        .then(
+            setTimeout(() => {
+                changeDetailsPromise(index)
+            }, 1500)
+        ).then(
+            setTimeout(() => {
+              animateEnterColumn(crewLeft, crewAvatar)
+            }, 1500)
+        )
     })
 });
+
+function changeDetailsPromise(index){
+    return new Promise((resolve) => {
+        resolve(changeDetails(index))
+    })
+}
+
+function changeDetails(index){
+    crewRole.innerHTML = crew[index].role.toUpperCase() 
+    crewName.innerHTML = crew[index].name.toUpperCase()
+    crewBio.innerHTML = crew[index].bio
+    crewAvatar.src = crew[index].images.webp
+}
+
+function animateOutColumnPromise(left, right){
+    return new Promise((resolve) => {
+        resolve(animateOutColumn(left, right))
+    })
+}
