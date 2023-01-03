@@ -24,11 +24,12 @@ changeCrewBtns.forEach((element, index) => {
             setTimeout(() => {
                 changeDetailsPromise(index)
             }, 1500)
-        ).then(
-            setTimeout(() => {
-              animateEnterColumn(crewLeft, crewAvatar)
-            }, 1500)
         )
+        crewAvatar.addEventListener('load', () => {
+            setTimeout(() => {
+                animateEnterColumn(crewLeft, crewAvatar)
+              }, 1000)       
+        })  
     })
 });
 
