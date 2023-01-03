@@ -17,21 +17,23 @@ techButtons.forEach((element, index) => {
         let techLeft = document.querySelector('.techDetails')
         let techRight = document.querySelector('.secondCol')
 
-        animateOutColumn(techLeft, techRight)
-
-        changeDetailsPromise().then(
+        animateOutColumnPromise(techLeft, techRight)
+        .then()
+        .then(
+            changeDetailsPromise(index)
+        ).then(
             setTimeout(() => {
               animateEnterColumn(techLeft, techRight)
-            }, 200)
+            }, 1500)
         )
 
         element.classList.add(techActiveClass)
     })
 })
 
-function changeDetailsPromise(){
-    new Promise((resolve) => {
-        resolve(changeDetails())
+function changeDetailsPromise(index){
+    return new Promise((resolve) => {
+        resolve(changeDetails(index))
     })
 }
 
@@ -40,4 +42,10 @@ function changeDetails(index){
     techDescription.innerHTML = tech[index].description
     techAvatar.src = tech[index].images.portrait
     techAvatarMobile.src = tech[index].images.landscape
+}
+
+function animateOutColumnPromise(left, right){
+    return new Promise((resolve) => {
+        resolve(animateOutColumn(left, right))
+    })
 }
