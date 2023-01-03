@@ -170,3 +170,22 @@ body{
         width: calc(100% + 5px);
     }
 }
+
+@media (max-width: 767px){
+    body {
+        background-image: url('/assets/technology/background-technology-mobile.jpg');
+    }
+
+    #technology h1{
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .theTermino{
+        font-size: 22px;
+    }
+
+    .techName{
+        font-size: 36px;
+    }
+}
