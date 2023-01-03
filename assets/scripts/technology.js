@@ -19,16 +19,25 @@ techButtons.forEach((element, index) => {
 
         animateOutColumn(techLeft, techRight)
 
-        setTimeout(() => {
-            techName.innerHTML = tech[index].name.toUpperCase()
-            techDescription.innerHTML = tech[index].description
-            techAvatar.src = tech[index].images.portrait
-            techAvatarMobile.src = tech[index].images.landscape
+        changeDetailsPromise().then(
             setTimeout(() => {
               animateEnterColumn(techLeft, techRight)
-            }, 200);
-        }, 1500);
+            }, 200)
+        )
 
         element.classList.add(techActiveClass)
     })
 })
+
+function changeDetailsPromise(){
+    new Promise((resolve) => {
+        resolve(changeDetails())
+    })
+}
+
+function changeDetails(index){
+    techName.innerHTML = tech[index].name.toUpperCase()
+    techDescription.innerHTML = tech[index].description
+    techAvatar.src = tech[index].images.portrait
+    techAvatarMobile.src = tech[index].images.landscape
+}
