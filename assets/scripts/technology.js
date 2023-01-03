@@ -6,7 +6,7 @@ const techActiveClass = 'techBtnActive'
 let techName = document.querySelector('.techName')
 let techDescription = document.querySelector('.techDescription')
 let techAvatar = document.querySelector('.techAvatarDesk')
-
+let techAvatarMobile = document.querySelector('.techAvatarMobile')
 const tech = myJson.technology
 
 techButtons.forEach((element, index) => {
@@ -23,6 +23,7 @@ techButtons.forEach((element, index) => {
             techName.innerHTML = tech[index].name.toUpperCase()
             techDescription.innerHTML = tech[index].description
             techAvatar.src = tech[index].images.portrait
+            techAvatarMobile.src = tech[index].images.landscape
             setTimeout(() => {
               animateEnterColumn(techLeft, techRight)
             }, 200);
