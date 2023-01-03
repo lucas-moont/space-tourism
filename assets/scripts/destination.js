@@ -21,33 +21,24 @@ destinationsBtns.forEach((button, index) => {
         let destinationData = event.target.getAttribute('data-destination')
         destinationData = destinationData.toUpperCase()
         animateOutColumn(firstCol, secondCol)
-        setTimeout(() => {
-            animateEnterColumn(firstCol, secondCol)
-            if(destinationData == 'MOON'){
-                destName.innerHTML = destinations[0].name
-                destImg.src = destinations[0].images.png
-                destDescription.innerHTML = destinations[0].description
-                destDistance.innerHTML = destinations[0].distance
-                destTravelTime.innerHTML = destinations[0].travel
-            }else if(destinationData == 'MARS'){
-                destName.innerHTML = destinations[1].name
-                destImg.src = destinations[1].images.png
-                destDescription.innerHTML = destinations[1].description
-                destDistance.innerHTML = destinations[1].distance
-                destTravelTime.innerHTML = destinations[1].travel
-            }else if(destinationData == 'EUROPA'){
-                destName.innerHTML = destinations[2].name
-                destImg.src = destinations[2].images.png
-                destDescription.innerHTML = destinations[2].description
-                destDistance.innerHTML = destinations[2].distance
-                destTravelTime.innerHTML = destinations[2].travel
-            }else if(destinationData == 'TITAN'){
-                destName.innerHTML = destinations[3].name
-                destImg.src = destinations[3].images.png
-                destDescription.innerHTML = destinations[3].description
-                destDistance.innerHTML = destinations[3].distance
-                destTravelTime.innerHTML = destinations[3].travel
-            }
-        }, 1500);
+        changeDetailsPromise().then(
+            setTimeout(() => {
+                animateEnterColumn(firstCol, secondCol)       
+            }, 1000)
+        )
     })
 })
+
+function changeDetailsPromise(){
+    new Promise((resolve) => {
+        resolve(changeDetails())
+    })
+}
+
+function changeDetails(index){
+    destName.innerHTML = destinations[index].name
+    destImg.src = destinations[index].images.png
+    destDescription.innerHTML = destinations[index].description
+    destDistance.innerHTML = destinations[index].distance
+    destTravelTime.innerHTML = destinations[index].travel
+}
