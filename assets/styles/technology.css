@@ -188,4 +188,13 @@ body{
     .techName{
         font-size: 36px;
     }
+
+    #technology .firstCol{
+        flex-flow: column;
+    }
+
+    .techButtons{
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
 }
