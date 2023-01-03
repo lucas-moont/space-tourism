@@ -20,7 +20,9 @@ techButtons.forEach((element, index) => {
         animateOutColumnPromise(techLeft, techRight)
         .then()
         .then(
-            changeDetailsPromise(index)
+            setTimeout(() => {
+                changeDetailsPromise(index)
+            }, 1500)
         ).then(
             setTimeout(() => {
               animateEnterColumn(techLeft, techRight)
