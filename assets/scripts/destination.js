@@ -26,11 +26,10 @@ destinationsBtns.forEach((button, index) => {
             setTimeout(() => {
                 changeDetailsPromise(index)
             }, 1500)
-        ).then(
-            setTimeout(() => {
-              animateEnterColumn(firstCol, secondCol)
-            }, 1500)
         )
+        destImg.addEventListener('load', () => {
+            animateEnterColumn(firstCol, secondCol)       
+        })  
     })
 })
 

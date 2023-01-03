@@ -26,9 +26,7 @@ changeCrewBtns.forEach((element, index) => {
             }, 1500)
         )
         crewAvatar.addEventListener('load', () => {
-            setTimeout(() => {
-                animateEnterColumn(crewLeft, crewAvatar)
-              }, 1000)       
+            animateEnterColumn(crewLeft, crewAvatar)
         })  
     })
 });

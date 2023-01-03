@@ -35,9 +35,7 @@ techButtons.forEach((element, index) => {
 
         if (techAvatarMobile.style.display != 'none' || techAvatarMobile.style.display != ''){
             techAvatar.addEventListener('load', () => {
-                setTimeout(() => {
-                    animateEnterColumn(techLeft, techRight)
-                  }, 1000)       
+                animateEnterColumn(techLeft, techRight)
             })  
         }
         element.classList.add(techActiveClass)
