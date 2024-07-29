@@ -1,9 +1,10 @@
-import myJson from '../../data.json' assert {type: 'json'}
 import { animateOutColumn, animateEnterColumn } from './animate.js'
+import { getJsonData } from './getJsonData.js'
 let crewRole = document.querySelector('.crewJob')
 let crewName = document.querySelector('.crewName')
 let crewBio = document.querySelector('.crewDescription')
 let crewAvatar = document.querySelector('.crewAvatar')
+const myJson = await getJsonData()
 
 const crew = myJson.crew
 

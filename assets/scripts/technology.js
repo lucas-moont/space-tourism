@@ -1,6 +1,7 @@
-import myJson from '../../data.json' assert {type: 'json'}
 import { animateOutColumn, animateEnterColumn } from './animate.js'
+import { getJsonData } from './getJsonData.js'
 
+const myJson = await getJsonData()
 let techButtons = document.querySelectorAll('.techBtn')
 const techActiveClass = 'techBtnActive'
 let techName = document.querySelector('.techName')
